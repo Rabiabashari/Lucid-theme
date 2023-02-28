@@ -1,0 +1,570 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6,ul,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.header_banner{
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+.header_banner::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #0000007d;
+    z-index: -1;
+}
+.navbar{
+    z-index: 4;
+    padding: 20px 0px 30px;
+}
+.nav-item{
+    
+}
+.nav-link::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 48%;
+    background-color: #008ed6;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+.nav-link::before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 48%;
+    background-color: #008ed6;
+    opacity: 0;
+    transition: .3s all ease-in-out;
+}
+.nav-item:hover .nav-link::before{
+    opacity: 1;
+}
+.nav-item:hover .nav-link::after{
+    opacity: 1;
+}
+.nav-link{
+    position: relative;
+    color: #fffefe;
+    text-transform: capitalize;
+    font-size: 19px;
+    margin-left: 10px !important;
+}
+.nav-link:hover{
+    color: #fffefe;
+}
+.navbar-brand{
+    margin: 0px 3px;
+}
+.banner{
+
+}
+.banner_content{
+    
+}
+.banner_content h6{
+    text-transform: uppercase;
+    color: #008ed6;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 80px;
+}
+.banner_content h1{
+    color: #ffffff;
+    font-size: 50px;
+    padding: 15px 0px;
+    z-index: 5;
+}
+.banner_content p{
+    color: #999999;
+    font-size: 17px;
+}
+.download{
+    color: #fff;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 10px 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 45px 5px 0px;
+    transition: .3s all ease-in-out;
+}
+.download:hover{
+    background-color: #008ed6;
+    color: #ffffff;
+}
+.view{
+    color: #fff;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    padding: 10px 26px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    margin: 45px 5px 0px;
+    transition: .3s all ease-in-out;
+}
+.view:hover{
+    background-color: #008ed6;
+    color: #ffffff;
+}
+.banner_content a{
+    align-items: center;
+}
+.phone{
+    position: absolute;
+    bottom: 0;
+    right: 7%;
+}
+.phone img{
+    height: 480px;
+}
+.feature_section{
+    border-bottom: .2px solid #99999947;
+}
+.heading p{
+    text-transform: uppercase;
+    color: #008ed6;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.heading h2{
+    color: #1a1a1a;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.heading .dash{
+    display: flex;
+    justify-content: center;
+}
+.heading .dash span{
+     display: block;
+     height: 2px;
+     width: 25px;
+     background: #008ed6;
+     margin: 25px 2px;
+}
+.feature{
+    
+}
+.feature h4{
+    text-align: center;
+    font-size: 25px;
+    color: #1a1a1a;
+    font-weight: 500;
+    padding: 30px 0px 15px;
+
+}
+.feature p{
+    text-transform: none;
+    color: #999999;
+    font-size: 14px;
+    line-height: 2;
+}
+.feature .icon{
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    border: .2px solid #99999947;
+    align-items: center;
+    line-height: 5.4;
+    margin: auto;
+
+}
+.feature .icon i{
+    text-align: center !important;
+    margin-left: 41%;
+    color: #008ed6;
+    font-size: 22px;
+}
+.about{
+    
+}
+.about_img{
+
+}
+.about_img img{
+    height: 100%;
+}
+.about_us{
+    
+}
+.about_us h5{
+    text-transform: uppercase;
+    color: #008ed6;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+    margin-top: 50px;
+}
+.about_us h1{
+    text-align: start;
+    font-size: 43px;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin: 23px 0px;
+}
+.about_us p{
+    text-align: start;
+    padding: 15px 0px;
+    line-height: 2;
+}
+.about_us .dash{
+    display: flex;
+    justify-content: start;
+}
+.about_us .dash span{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background: #008ed6;
+    margin: 10px 2px;
+
+}
+.about_us .about_icon{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 15px 0px;
+}
+.about_us .about_icon i{
+    color: #008ed6;
+    font-size: 13px;
+    margin-right: 6px;
+}
+.about_us .about_icon h6{
+    text-transform: none;
+    font-size: 17px;
+}
+.details{
+    background: #f2f2f2;
+}
+.details h1{
+    font-size: 35px;
+    font-weight: 500;
+}
+.lay_phone{
+
+}
+.lay_phone img{
+    width: 97%;
+    margin-right: 5%;
+}
+.plan{
+    background-image: url(../images/pricing_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
+    padding: 50px 0px 0px;
+    z-index: 0;
+    margin: 0px 0px 0px 0px;
+}
+.plan::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1a1a1a;
+    opacity: .3;
+    z-index: -1;
+}
+.plan .heading h2{
+    color: #fffefe;
+}
+.item{
+
+}
+.item p{
+    margin-top: 20px;
+     color: #ffffff;
+     font-size: 17px;
+     width: 100%;
+
+}
+.item_flex{
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     margin-top: 30px;
+}
+.item_flex .name{
+     color: #ffffff;
+}
+.item_flex .name h5{
+     font-size: 15px;
+     font-weight: 300;
+     margin-bottom: 5px;
+}
+.item_flex .name h6{
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.item_flex .circle{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.owl-theme .owl-dots{
+    margin-top: 0 !important;
+    position: absolute;
+    bottom: -40%;
+    left: 45%;
+    z-index: 8;
+}
+.owl-theme .owl-dots .owl-dot span{
+    height: 7px;
+    width: 7px;
+    border-radius: 30px;
+    box-shadow: inset .5px;
+    display: block;
+    background: transparent;
+    border: .2px solid #99999947;
+    transition:opacity .2s ease;
+    z-index: 9;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+    height: 10px;
+    width: 10px;
+    border-radius: 30px;
+    background: #ffffff;
+    z-index: 9;
+}
+.download_theme{
+    background: #15141a;
+    padding: 40px 0px;
+}
+.download_theme h1{
+     color: #ffffff;
+     font-size: 30px;
+     font-weight: 300;
+     text-transform: none;
+     margin: 10px 0px;
+}
+.download_theme .download{
+     margin: 10px 10px 10px 0px;
+}
+.download_theme .view{
+    margin: 10px 10px 10px 0px;
+}
+.pricing{
+    padding: 25px 0px;
+}
+.border{
+    border: 3px solid #999999;
+    text-align: center;
+    width: 100%;
+}
+.border h2{
+     font-size: 30px;
+     text-transform: uppercase;
+     font-weight: 700;
+     color: #1a1a1a;
+     padding: 20px 0px;
+}
+.border p{
+    color: #999999;
+    font-size: 18px;
+    margin: 40px 0px;
+}
+.border p span{
+    color: #008ed6;
+}
+.ordernow{
+    color: #008ed6;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    padding: 12px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 5px 30px;
+    transition: .3s all ease-in-out;
+}
+.border:hover .ordernow{
+    background: #008ed6;
+    color: #f2f2f2;
+}
+.tag_span{
+    border-top: .5px solid #99999947;
+    border-bottom: .5px solid #99999947;
+    align-items: center;
+    padding: 17px 0px 30px;
+    transition: .3s all ease-in-out;
+}
+.border:hover .tag_span{
+    background: #008ed6;
+    color: #f2f2f2;
+}
+.border:hover .tag_span span{
+    color: #f2f2f2;
+}
+.tag_span span{
+    color: #999999;
+}
+.price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price h6{
+     margin-bottom: 15px;
+     font-size: 30px;
+}
+.price h1{
+     font-size: 70px;
+}
+.contact{
+    background: #ededed;
+    padding: 40px 0px 240px;
+}
+.cont{
+    text-align: center;
+}
+.cont i{
+     font-size: 30px;
+     color: #008ed6;
+}
+.cont p{
+      color: #999999;
+      font-size: 16px;
+      margin-top: 20px;
+}
+.map{
+    position: relative;
+}
+form{
+    background-color: #15141a;
+}
+form .form_area{
+     padding: 50px 50px 30px;
+     display: flex;
+     justify-content: space-between;
+}
+form .form_area .left_div{
+     width: 49%;
+}
+form .form_area .right_div{
+     width: 49%;
+     text-align: end;
+}
+form .form_area .right_div .send{
+    background-color: #008ed6;
+    color: #fff;
+    border-radius: 4px;
+    padding: 12px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 20px 5px 30px;
+    transition: .3s all ease-in-out;
+}
+form .form_area .right_div .send:hover{
+    background: #0c618b;
+    color: #f2f2f2;
+}
+form input{
+     width: 100%;
+     border: none !important;
+     border: 1px solid #999999 !important;
+     border-radius: 3px !important;
+     background: transparent !important;
+     margin-bottom: 25px;
+}
+form input::placeholder{
+      color: #999999 !important;
+      text-transform: uppercase;
+      font-size: 15px;
+}
+form input:focus{
+     box-shadow: none;
+     color: #999999;
+     background: transparent;
+}
+form textarea{
+      width: 100%;
+      border: none !important;
+      border: 1px solid #999999 !important;
+      border-radius: 3px !important;
+      background: transparent !important;
+}
+form textarea:focus{
+    box-shadow: none;
+    color: #999999;
+    background: transparent;
+}
+form textarea::placeholder{
+    color: #999999 !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 13px 0px 0px 10px;
+}
+.form_col{
+    position: absolute;
+    top: -46%;
+    left: 27%;
+}
+footer{
+     background: #15141a;
+}
+footer p{
+    color: #444348;
+    text-align: center;
+    text-transform: uppercase;
+}
+footer span{
+    color: #008ed6;
+    font-weight: 700;
+}
+footer .icon ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+}
+footer .icon ul li{
+      margin: 20px 25px;
+}
+footer .icon ul li a{
+    
+}
+footer .icon ul li a i{
+    color: #444348;
+    font-size: 25px;
+    transition: .3s all ease-in-out;
+}
+footer .icon ul li a i:hover{
+    color: #008ed6;
+}
